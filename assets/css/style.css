@@ -1,0 +1,9 @@
+body {
+    background-size: cover;
+}
+
+.force-to-bottom {
+    position:absolute;
+    bottom: 5%;
+    width: 75%;
+}

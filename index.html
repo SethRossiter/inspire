@@ -3,21 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<div class="container">
+		<header class="page-header">
+			<ul class="nav nav-pills pull-right">
+				<div id="weather">
+					Your Weather Template
+				</div>
+			</ul>
+		</header>
+		
 
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
+		<div id="todo">
+			<!--<form onsubmit="app.controllers.toDoController.addToDoFromForm(event)">
+			<div class="form-group">
+                <label for="todoItem">To Do Item</label>
+                <input class="form-control" type="text" name="todo" required>
+            </div>
+			<button type="submit">Add to Todos</button>
+		</form>	-->
+			A Todo List
+		</div>
+		<div class="row force-to-bottom text-center">
+			<div class= "col-sm-6.col-sm-offset-3">
+		<div id="quote">
+			The Quote
+		</div>
+		</div>
 	</div>
 
 
