@@ -32,7 +32,7 @@ function TodoController() {
 			template += `
 			<div class="content-todo">
 				<h3>${todo}
-				<button onclick="app.controllers.toDoController.removeTodoFromForm(event)"></button>
+				<button onclick="app.controllers.toDoController.removeToDoFromForm(event)"></button>
 			</div>
 			`
 		}
