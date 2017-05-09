@@ -7,7 +7,7 @@ body {
 .force-to-bottom {
     position:absolute;
     bottom: 5%;
-    width: 75%;
+    width: 50%;
 }
 
 .clock{
