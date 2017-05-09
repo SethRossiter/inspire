@@ -11,7 +11,8 @@ function QuoteController() {
 		var template =
 			`
 			<h2>${quote.quote}</h2>
-			<h2>${quote.author.hover}</h2>
+			
+			<h3>${quote.author}</h3>
 			
 			
 			`
