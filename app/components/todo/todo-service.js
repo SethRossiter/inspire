@@ -1,5 +1,12 @@
 function TodoService(){
 	//This service is all setup for you no edits necessary here
+	
+	// var todosArr = [];  
+  
+	// this.getTodos = function(){
+	// 	return todosArr.slice(0, todosArr.length)
+	// }
+
 	this.getTodos =  function(){
 		var t = localStorage.getItem('todo');
 		if(t){

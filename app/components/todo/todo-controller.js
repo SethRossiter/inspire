@@ -4,7 +4,7 @@ function TodoController() {
 	 // saveTodos accepts an array and stores it to your local storage
 	var todoService = new TodoService()
 
-	this.addTodoFromForm = function (e) {
+	this.addTodoFromForm = function addTodoFromForm (e) {
 		e.preventDefault()
 		// TAKE THE INFORMATION FORM THE FORM
 		var form = e.target
