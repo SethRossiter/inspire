@@ -16,12 +16,13 @@ function TodoController() {
 
 		// FINAL ACTION OF ADDING A TODO
 		todoService.saveTodos(todosArr)
-		drawTodos(todoService.getTodos())
+		drawTodos(todosArr)
+		document.getElementById("todo-form").reset()
 	}
 
-	this.removeToDoFromForm = function (todo) {
+	this.removeToDoFromForm = function removeToDoFromForm (todo) {
 		todosArr = todoService.getTodos()
-		todosArr.splice(todo)
+		todosArr.splice(todoArr.indexOf(todo),1)
 		todoService.saveTodos(todosArr)
 		drawTodos(todoService.getTodos())
 	}
@@ -33,7 +34,7 @@ function TodoController() {
 			template += `
 			<div class="content-todo">
 				<h3>${todo}</h3>
-				<button onclick="app.controllers.toDoController.removeToDoFromForm(event)"></button>
+				<button onclick="app.controllers.toDoController.removeToDoFromForm(event)">X</button>
 			</div>
 			`
 		}
