@@ -9,7 +9,7 @@ function WeatherController(){
 			console.log(weather)
 			var template =
 			`
-			<h3>${(Math.round(weather.main.temp-273.15)*1.8+32)}°<h3>
+			<h3>${(Math.floor(weather.main.temp-273.15)*1.8+32)}°<h3>
 			<h4>${weather.name}</h4>
 			
 			`
