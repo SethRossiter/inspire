@@ -20,7 +20,7 @@ function TodoController() {
 		document.getElementById("todo-form").reset()
 	}
 
-	this.removeTodoFromForm = function removeToDoFromForm (todo) {
+	this.removeTodoFromForm = function removeTodoFromForm (todo) {
 		todosArr = todoService.getTodos()
 		todosArr.splice(todoArr.indexOf(todo),1)
 		todoService.saveTodos(todosArr)
