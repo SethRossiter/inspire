@@ -3,7 +3,7 @@ var app = {
     weatherController: new WeatherController(),
     quoteController: new QuoteController(),
     imageController: new ImageController(),
-    todoController: new TodoController(),
+    toDoController: new TodoController(),
   }
 }
 function showTime(){
