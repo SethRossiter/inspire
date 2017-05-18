@@ -4,7 +4,7 @@ function TodoController() {
 	 // saveTodos accepts an array and stores it to your local storage
 	var todoService = new TodoService()
 
-	this.addToDoFromForm = function (e) {
+	this.addTodoFromForm = function (e) {
 		e.preventDefault()
 		// TAKE THE INFORMATION FORM THE FORM
 		var form = e.target
@@ -20,7 +20,7 @@ function TodoController() {
 		document.getElementById("todo-form").reset()
 	}
 
-	this.removeToDoFromForm = function removeToDoFromForm (todo) {
+	this.removeTodoFromForm = function removeToDoFromForm (todo) {
 		todosArr = todoService.getTodos()
 		todosArr.splice(todoArr.indexOf(todo),1)
 		todoService.saveTodos(todosArr)
